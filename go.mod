@@ -21,7 +21,7 @@ require (
 	github.com/gobuffalo/httptest v1.0.4
 	github.com/gogo/protobuf v1.2.0 // indirect
 	github.com/golang/snappy v0.0.1 // indirect
-	github.com/google/go-cmp v0.2.0
+	github.com/google/go-cmp v0.3.0
 	github.com/google/martian v2.1.0+incompatible // indirect
 	github.com/google/uuid v1.1.1
 	github.com/googleapis/gax-go v2.0.0+incompatible // indirect
@@ -33,7 +33,7 @@ require (
 	github.com/kelseyhightower/envconfig v1.3.0
 	github.com/konsorten/go-windows-terminal-sequences v1.0.1 // indirect
 	github.com/minio/minio-go v6.0.5+incompatible
-	github.com/mitchellh/go-homedir v1.0.0
+	github.com/mitchellh/go-homedir v1.1.0
 	github.com/philhofer/fwd v1.0.0 // indirect
 	github.com/prometheus/client_golang v0.9.1 // indirect
 	github.com/sirupsen/logrus v1.1.1
@@ -50,6 +50,7 @@ require (
 	go.etcd.io/etcd v0.0.0-20190215181705-784daa04988c
 	go.mongodb.org/mongo-driver v1.0.0
 	go.opencensus.io v0.17.0
+	golang.org/x/crypto v0.0.0-20190701094942-4def268fd1a4
 	golang.org/x/mod v0.1.0
 	golang.org/x/oauth2 v0.0.0-20180620175406-ef147856a6dd
 	golang.org/x/sync v0.0.0-20190423024810-112230192c58
@@ -58,4 +59,5 @@ require (
 	gopkg.in/DataDog/dd-trace-go.v1 v1.10.0 // indirect
 	gopkg.in/go-playground/assert.v1 v1.2.1 // indirect
 	gopkg.in/go-playground/validator.v9 v9.20.2
+	gopkg.in/src-d/go-git.v4 v4.13.1
 )

@@ -13,6 +13,7 @@ import (
 	"github.com/gomods/athens/pkg/download/mode"
 	"github.com/gomods/athens/pkg/log"
 	"github.com/gomods/athens/pkg/module"
+	"github.com/gomods/athens/pkg/module/subdirfetcher"
 	"github.com/gomods/athens/pkg/stash"
 	"github.com/gomods/athens/pkg/storage"
 	"github.com/gorilla/mux"
@@ -73,7 +74,13 @@ func addProxyRoutes(
 	// 3. The stashpool manages limiting concurrent requests and passes them to stash.
 	// 4. The plain stash.New just takes a request from upstream and saves it into storage.
 	fs := afero.NewOsFs()
-	mf, err := module.NewGoGetFetcher(c.GoBinary, c.GoProxy, fs)
+
+	// mf, err := module.NewGoGetFetcher(c.GoBinary, c.GoProxy, fs)
+	// if err != nil {
+	// 	return err
+	// }
+
+	mf, err := subdirfetcher.NewSubdirFetcher(c.GoBinary, c.GoProxy, fs)
 	if err != nil {
 		return err
 	}
